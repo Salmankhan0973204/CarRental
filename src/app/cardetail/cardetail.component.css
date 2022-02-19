@@ -1,0 +1,374 @@
+/* .Container{
+  height: 2000px;
+  width: 100%;
+}
+#leftPartition{
+height:2000px;
+width:60%
+}
+#vehiclespecification{
+  font-size: large;
+  font-weight: bold;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+#rightPartition{
+height: 2000px;
+width: 40%;
+
+}
+#bigPicture{
+  height: 400px;
+}
+#formContainer{
+  background-color:#f7f7f7;
+  height:1178PX;
+}
+#senventyDollarPerDay{
+  height: 50px;background-color: black;align-self: center;
+}
+th, td {
+ width: 28%;
+}
+
+#sliderRow{
+  height: 200px;
+  background-color: black;
+}
+#submit:hover{
+
+  background: #253241;
+}
+.fl-page-padding {
+  height: 110px;
+
+}
+.row{
+display: flex;
+flex-wrap: wrap;
+} */
+/* }
+.fl-page-padding {
+  height: 110px;
+}
+body {
+  font-family: Lato;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  text-transform: none;
+  color: #333333;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.single-add-to-compare {
+  z-index: 999999;
+  position: fixed;
+  top: -30%;
+  left: 0;
+  right: 0;
+  padding-top: 17px;
+  min-height: 71px;
+  background-color: #dc2d13;
+  opacity: 0;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.container {
+  max-width: 1170px;
+}
+.fl-page-heading {
+  min-height: 300px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.fl-page-heading {
+  background-color: #121820;
+} */
+/*
+table > tr>td ,th{
+  padding-left: 2rem;
+}
+.sidebar_text{
+
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: inline-block;
+
+}
+
+h3{
+font-family: Montserrat;
+font-weight: 700;
+text-transform: none;
+color: #253241;
+font-size: 14px;
+}
+.extra_service_title_item .extr-left {
+  width: 100px;
+  padding-right: 0;
+}
+.booking-price-info {
+  font-size: 11px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 400;
+  font-style: italic;
+  margin: 5px 0;
+  clear: both;
+  border-bottom: 1px dotted #ddd;
+  padding-bottom: 6px;
+}
+.sidebar:not(.cars-sidebar) .widget, .sidebar.cars-sidebar {
+  background-color: #f1f5fa;
+}
+
+.sidebar:not(.cars-sidebar) .widget {
+  margin-top: 35px;
+  padding: 30px;
+  font-size: 14px;
+}
+.sidebar .widget {
+  margin-bottom: 25px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+.fc table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1em;
+}
+.sidebar .booking-preview-calendar h2 {
+  font-size: 20px;
+}
+
+.fc .fc-toolbar > * > * {
+  float: left;
+  margin-left: 0.75em;
+}
+.fc-toolbar h2 {
+  margin: 0;
+}
+.clearfix{
+  background-color: #f1f5fa;
+
+}
+.sidebar .widget, .sidebar.cars-sidebar {
+  background-color: #f1f5fa;
+}
+ */
+ #Container{
+  height: 1700px;
+  width: 100%;
+}
+#leftPartition{
+height:1700px;
+width:60%
+}
+#vehiclespecification{
+  font-size: large;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#rightPartition{
+height: 1700px;
+width: 40%;
+}
+#bigPicture{
+  height: 400px;
+}
+#formContainer{
+  background-color:#f7f7f7;
+  height: 1000PX;
+}
+#senventyDollarPerDay{
+  height: 50px;background-color: black;align-self: center;
+}
+th, td {
+ width: 28%;
+}
+
+#sliderRow{
+  height: 200px;
+  background-color: black;
+}
+#submit:hover{
+
+  background: #253241;
+}
+#hoverImage:hover{ border: 4px solid red;}
+
+#Vehicle:hover{
+border-bottom:  1px solid red;
+}
+#Reviews:hover
+{
+  border-bottom:  1px solid red;
+}
+#FeatureSpecification{
+  border-bottom:  1px solid red;
+}
+@media(min-width:770px){
+  #calender{
+margin-left: 11%;
+  }
+  #booking{
+      margin-left: 11%;
+  }
+  #formContainer{
+      margin-left: 11%;
+  }
+  #seventydollarPerDay{
+      margin-left: 11%;
+  }
+  .content{
+      margin-left: 5%;
+  }
+  #Vehicle{
+      margin-left: 5%;
+  }
+  #carouselExampleControls{
+      margin-left: 5%;
+  }
+  #vehicleVerification{
+      margin-left: 5%;
+  }
+  #vehicle{
+      margin-top: 25%;
+      margin-left:5%;
+  }
+}
+@media (max-width:767px){
+  #leftPartition{
+      width: 100%;
+      height: 1050px;
+
+  }
+
+  #rightPartition{
+  height:1400px;
+  }
+  #formContainer{
+      height: 800px !important;
+  }
+  #Vehicle{
+      width: auto;
+  }
+  #Reviews{
+      width: auto;
+      float: left;
+  }
+  #FeatureSpecification{
+      width: auto;
+      float:left;
+  }
+
+  #rightPartition{
+      width: 100%;
+      margin-bottom: -5%;
+  }
+
+
+
+}
+
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+padding: 70px 25px;
+width: 100%;
+background: #1abc9c;
+text-align: center;
+}
+
+/* Month list */
+.month ul {
+margin: 0;
+padding: 0;
+}
+
+.month ul li {
+color: white;
+font-size: 20px;
+text-transform: uppercase;
+letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+float: left;
+
+}
+
+/* Next button */
+.month .next {
+float: right;
+
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+margin: 0;
+padding: 10px 0;
+background-color:#ddd;
+}
+
+.weekdays li {
+display: inline-block;
+width: 13.6%;
+color: #666;
+text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+padding: 10px 0;
+background: #eee;
+margin: 0;
+}
+
+.days li {
+list-style-type: none;
+display: inline-block;
+width: 13.6%;
+text-align: center;
+margin-bottom: 5px;
+font-size:12px;
+color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+padding: 5px;
+background: #1abc9c;
+color: white !important
+}

@@ -1,0 +1,175 @@
+
+<div class="section-title-page area-bg area-bg_dark area-bg_op_60">
+  <div class="area-bg__inner">
+    <div class="container">
+      <div class="row">
+        <div class="col offset-lg-3">
+          <div class="b-title-page__wrap">
+            <h1 class="b-title-page">Vehicle Details</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="l-main-content">
+
+    <div class="container">
+
+          <button  style="float: right;" type="button" id="PopoverCustomT-1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#vehicleDetail" (click)="AddNewVehicle()"
+          >Add New Vehicle</button>
+
+        <div class="table-responsive">
+
+
+
+      <table class="table table-hover ">
+          <thead>
+            <tr>
+              <th scope="col">S. No</th>
+              <th scope="col">Make</th>
+              <th scope="col">Model</th>
+              <th scope="col">Stock</th>
+              <th scope="col">Year</th>
+              <th scope="col">Actions</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of Record ; let i=index" >
+              <th scope="row">{{i+1}}</th>
+              <td>{{item.vMake}}</td>
+              <td>{{item.vModel}}</td>
+              <td>{{item.vStockStatus}}</td>
+              <td>{{item.vYear}}</td>
+              <td>
+                  <button type="button" id="PopoverCustomT-1" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#vehicleDetail" (click)="detail(item.vID)"
+                  >Details</button>
+              <button style="margin-left: 10px;" type="button" id="PopoverCustomT-1" class="btn btn-primary btn-sm"  data-toggle="modal" data-target="#vehicleDetail" (click)="EditOpen(item.vID)"
+                  >Edit</button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="vehicleDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 80%;" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+ <div class="modal-body">
+      <div class="container-fluid">
+          <form class=""  [formGroup]="VehicleFormControl" >
+              <div class="form-row">
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Make</label><input
+                              [readonly]="enableInput" formControlName="vMake" type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Model</label><input
+                          [readonly]="enableInput" formControlName="vModel" type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Stock Status</label><input
+                          [readonly]="enableInput"                              formControlName="vStockStatus" type="text" class="form-control" required></div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Year</label><input
+                          [readonly]="enableInput"   formControlName="vYear"  type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Mileage</label><input
+                          formControlName="vMileage" [readonly]="enableInput"   type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">VIN</label><input
+                          formControlName="vVIN" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Version</label><input
+                          formControlName="vVersion" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Fuel Type</label><input
+                          formControlName="vFuelType" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Engine CM3</label><input
+                          formControlName="vEngineCM3" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Horse Power</label><input
+                          formControlName="vHorsePower" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Transmission</label><input
+                          formControlName="vTransmission" [readonly]="enableInput"   type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Doors</label><input
+                          formControlName="vDoors" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Condition</label><input
+                          formControlName="vCondition" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Drive</label><input
+                          formControlName="vDrive" [readonly]="enableInput"   type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Seat</label><input
+                          formControlName="vSeat" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Color</label><input
+                          formControlName="vColor" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Interior Color</label><input
+                          formControlName="vInteriorColor" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="position-relative form-group"><label class="">Price Type</label><input
+                          formControlName="vPriceType" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="col-md-12">
+                      <div class="position-relative form-group"><label class="">Warranty</label><input
+                          formControlName="vWarranty" [readonly]="enableInput"  type="text" class="form-control" required></div>
+                  </div>
+
+              </div>
+              <div class="form-row">
+              <button type="button" class="col-md-6  btn btn-success btn-sm btn-block" style="background: #253241;
+              color: white;" (click)="updat(VehicleFormControl)"   #update>Update</button>
+              <button type="button" class="col-md-6  btn btn-success btn-sm btn-block" style="background: #253241;
+              color: white;" (click)="submitVehicle(VehicleFormControl)"   #submit>Submit</button>
+              </div>
+          </form>
+      </div>
+    </div>
+
+
